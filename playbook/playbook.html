@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>High-Paying Data Engineer Playbook — 5 Years Experience</title>
+  <link rel="stylesheet" href="playbook.css" />
+</head>
+<body>
+
+<section class="cover">
+  <div class="cover-kicker">India 2026  ·  Product / GCC / Unicorn  ·  Senior IC Track</div>
+  <div class="cover-rule"></div>
+  <h1>High-Paying<br/>Data Engineer<br/>Playbook</h1>
+  <p class="sub">5 years experience. Current 13 LPA. Target first switch 28–38 LPA, second jump 40–55 LPA. Yeh beginner course nahi hai — salary-correction + senior positioning ka end-to-end plan hai.</p>
+
+  <div class="cover-meta">
+    <div class="cover-chip"><div class="k">Profile</div><div class="v">Data Engineer · 5 YOE</div></div>
+    <div class="cover-chip"><div class="k">Starting point</div><div class="v">13 LPA · underpaid vs market</div></div>
+    <div class="cover-chip"><div class="k">6-month target</div><div class="v">28–38 LPA product / GCC</div></div>
+    <div class="cover-chip"><div class="k">18-month target</div><div class="v">40–55 LPA senior / staff-track</div></div>
+  </div>
+
+  <p class="cover-blurb">
+    5 saal pe 13 LPA ka matlab skill zero nahi hai. Matlab galat employer type + shallow production stories.
+    Big companies (Flipkart, PhonePe, Walmart, JPMC, Google, Amazon, Databricks-class) 5 YOE ko
+    <strong style="color:#fff;">Spark tuner + pipeline owner + system designer</strong> ki tarah interview karti hain, ETL operator ki tarah nahi.
+  </p>
+
+  <div class="cover-footer">
+    <span class="left">Personal playbook · Not a student syllabus</span>
+    <span class="right">Print · Follow · Ship projects · Switch</span>
+  </div>
+</section>
+
+<section class="toc">
+  <div class="chapter-kicker">Contents</div>
+  <h2>Kya-kya cover hai</h2>
+  <table class="toc-table">
+    <tr><td class="num">01</td><td><div class="title">5 YOE pe asli diagnosis</div><div class="hint">13 LPA kyun stuck hai, market kya pay karti hai, kya skip karna hai</div></td></tr>
+    <tr><td class="num">02</td><td><div class="title">Target companies + salary map</div><div class="hint">Product, GCC, FAANG-track, analytics, services — kahan apply karna hai</div></td></tr>
+    <tr><td class="num">03</td><td><div class="title">Senior Data Engineer profile (paper pe kaise dikhna hai)</div><div class="hint">Title, headline, skill grouping, 5-year story</div></td></tr>
+    <tr><td class="num">04</td><td><div class="title">Chronological skill order (5 YOE compressed)</div><div class="hint">6 months, 10 skills, beginner Hadoop path nahi</div></td></tr>
+    <tr><td class="num">05</td><td><div class="title">Month-by-month sprint + resources</div><div class="hint">SQL expert → Spark internals → dbt/Airflow → cloud/Databricks → Kafka → design</div></td></tr>
+    <tr><td class="num">06</td><td><div class="title">3 flagship projects (interview converters)</div><div class="hint">Batch Spark, warehouse+dbt, CDC streaming lakehouse</div></td></tr>
+    <tr><td class="num">07</td><td><div class="title">Resume + LinkedIn rewrite (5 YOE)</div><div class="hint">Metrics, ownership, ATS keywords, message scripts</div></td></tr>
+    <tr><td class="num">08</td><td><div class="title">Interview playbook — big company rounds</div><div class="hint">SQL, Python, Spark, Airflow, Kafka, system design, HM round</div></td></tr>
+    <tr><td class="num">09</td><td><div class="title">90-day calendar + apply engine</div><div class="hint">Weekly hours, 40 applications, referral system</div></td></tr>
+    <tr><td class="num">10</td><td><div class="title">Offer negotiation + checklists</div><div class="hint">28 vs 32 vs 40 LPA scripts, final packing list</div></td></tr>
+  </table>
+  <p class="tiny">Is PDF ko print karke wall pe phase checklist chipkao. Courses collect mat karo. Har phase ka ek GitHub repo + ek interview story mandatory hai.</p>
+</section>
+
+<!-- 01 DIAGNOSIS -->
+<section class="section">
+  <div class="chapter-kicker">Chapter 01</div>
+  <h2 class="chapter">5 YOE pe asli diagnosis</h2>
+  <p class="lead">5 years experience par 13 LPA India 2026 mein <strong>market-below</strong> hai. Yeh playbook “naya seekho” nahi, <strong>underpaid senior ko correctly pack karke product/GCC mein daalna</strong> hai.</p>
+
+  <div class="kpi">
+    <div class="box"><div class="n">13 LPA</div><div class="l">Abhi · typical services/captive band</div></div>
+    <div class="box"><div class="n">16–26</div><div class="l">3–5 YOE product mid band</div></div>
+    <div class="box"><div class="n">28–45</div><div class="l">5–8 YOE product/GCC senior</div></div>
+    <div class="box"><div class="n">40–70</div><div class="l">Lead / platform / top-tier 18 months out</div></div>
+  </div>
+
+  <h3>Market fact (2026 India)</h3>
+  <table class="data">
+    <tr><th>Experience</th><th>IT services / body-shop</th><th>Product / unicorn</th><th>GCC (Walmart, JPMC, Target…)</th></tr>
+    <tr><td>3–5 years</td><td>8–15 LPA</td><td>16–28 LPA</td><td>22–38 LPA</td></tr>
+    <tr><td>5–8 years (senior IC)</td><td>15–25 LPA</td><td>28–45 LPA</td><td>32–55 LPA</td></tr>
+    <tr><td>Kafka + Spark tuning + Databricks</td><td>+2–4 LPA</td><td>+5–10 LPA</td><td>+5–12 LPA</td></tr>
+  </table>
+  <p class="tiny">Bands typical CTC, city Bangalore/Hyderabad/Pune. Loyalty hike services ke andar 8–15% — gap close nahi hota. Switch hi multiplier hai.</p>
+
+  <div class="callout warn">
+    <div class="label">Seedha bolun</div>
+    5 saal · 13 LPA almost always in 3 buckets: (1) TCS / Infosys / Wipro / Cognizant / Capgemini / Accenture data practice, (2) analytics consultancy (Tiger, LatentView, Fractal-type) with reporting-heavy work, (3) captive team jahan ADF/SSIS/Informatica/Glue jobs run karte ho lekin Spark internals, cost, SLA, on-call ownership nahi. Skills “hai” — <strong>packaging + depth + employer type</strong> nahi.
+  </div>
+
+  <h3>5 YOE interviewer kya assume karta hai</h3>
+  <div class="grid-2">
+    <div class="card">
+      <h4>Big company expect karti hai</h4>
+      <ul>
+        <li>SQL expert — windows, plans, incremental loads</li>
+        <li>PySpark production — shuffle, skew, AQE, file sizes</li>
+        <li>Ek cloud deep (IAM, storage, cost, networking basics)</li>
+        <li>Orchestration: Airflow / Composer / ADF + <em>idempotency</em></li>
+        <li>Data modeling: grain, SCD2, late data</li>
+        <li>Ek failure story: “job toot gayi, maine yeh fix kiya”</li>
+        <li>System design: 100M events/day pipeline on whiteboard</li>
+        <li>Stakeholders: analytics/ML ko SLA pe data diya</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>13 LPA profile often actually hai</h4>
+      <ul>
+        <li>SQL chalta hai, explain plan weak</li>
+        <li>PySpark notebooks / Glue jobs, no tuning write-up</li>
+        <li>Cloud = “S3 pe file daali” / ADF drag-drop</li>
+        <li>Informatica / SSIS / Talend years — keyword trap</li>
+        <li>No Git PR culture, no tests, no CI</li>
+        <li>Volume unknown (“bahut tables hain”)</li>
+        <li>Design round pe tools list, trade-offs nahi</li>
+        <li>Resume: 20 tools, 0 metrics</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Yeh 5 YOE playbook kya NAHI hai</h3>
+  <ul>
+    <li>Python for beginners, Hadoop 2015 path, 12 certifications race</li>
+    <li>AWS + Azure + GCP teeno “cover” karna</li>
+    <li>Data analyst → DE career switch syllabus</li>
+    <li>2 saal wait karke “in-company promotion se 18 LPA”</li>
+  </ul>
+
+  <div class="callout ok">
+    <div class="label">Ek rule</div>
+    Agle 6 months ka job: <strong>3 production-style repos + Spark internals fluency + 1 cloud lakehouse + 8 STAR stories + 40 targeted applications.</strong>
+    Certificate optional. Referral + design round = offer.
+  </div>
+</section>
+
+<!-- 02 COMPANIES -->
+<section class="section">
+  <div class="chapter-kicker">Chapter 02</div>
+  <h2 class="chapter">Target companies + kahan apply karna hai</h2>
+  <p class="lead">5 YOE par shotgun Naukri blast mat karo. <strong>Employer type choose karo</strong> — yahi CTC decide karta hai.</p>
+
+  <h3>Apply priority (upar se neeche)</h3>
+  <table class="data">
+    <tr><th>Tier</th><th>Examples</th><th>5 YOE typical</th><th>Interview style</th></tr>
+    <tr><td><strong>A. Product / fintech / consumer</strong></td><td>PhonePe, Razorpay, CRED, Flipkart, Swiggy, Zomato, Meesho, Groww, Zerodha, Dream11, ShareChat, Zepto, Blinkit, Paytm</td><td>28–42 LPA</td><td>Hard SQL + Spark + design + coding</td></tr>
+    <tr><td><strong>B. GCC / global product India</strong></td><td>Walmart Global Tech, Target, JPMC, Goldman, Barclays, Wells Fargo, Amex, Uber, Microsoft, Amazon, Google, Atlassian, Salesforce, Oracle, SAP, Optum, Thomson Reuters</td><td>30–50 LPA (Google/Amazon/MSFT upper)</td><td>SQL + Python + Spark + design + behavioral</td></tr>
+    <tr><td><strong>C. Data platforms</strong></td><td>Databricks, Snowflake partners, ThoughtSpot, Thoughtworks data, LatentView (only senior IC), Affine (skip if low band)</td><td>28–55 LPA</td><td>Platform depth, Delta/Iceberg, cost</td></tr>
+    <tr><td><strong>D. Strong mid product</strong></td><td>Freshworks, Chargebee, Postman, BrowserStack, IDfy, Darwinbox, Whatfix, Innovaccer</td><td>24–36 LPA</td><td>Modern stack, dbt + cloud</td></tr>
+    <tr><td><strong>E. Avoid as “upgrade”</strong></td><td>TCS/Infosys/Wipro/Cognizant/HCL volume hiring, 15% hike wale internal moves</td><td>14–20 LPA</td><td>Time waste for your goal</td></tr>
+  </table>
+
+  <div class="callout">
+    <div class="label">5 YOE sweet spot</div>
+    Pehla switch: <strong>Tier A or B, 28–38 LPA.</strong> “Dream FAANG only” mat baitho 9 months. 2–3 offers collect karo. Google/Amazon parallel try. Services counter-offer almost never match product band.
+  </div>
+
+  <h3>Roles ke titles — search yeh karo</h3>
+  <ul>
+    <li><strong>Primary:</strong> Data Engineer, Senior Data Engineer, Data Platform Engineer</li>
+    <li><strong>Also:</strong> Analytics Engineer (dbt-heavy, often 24–34 LPA), Spark Engineer, Databricks Engineer</li>
+    <li><strong>Avoid if you want DE pay:</strong> BI Developer, ETL Developer, MIS, “Data Analyst + SQL”</li>
+    <li><strong>Stretch (month 12+):</strong> Staff Data Engineer, Streaming Engineer, Data Architect (only if design round strong)</li>
+  </ul>
+
+  <h3>City strategy</h3>
+  <p>Bangalore / Hyderabad / Pune / Gurgaon max density. Remote India product possible. US remote 5 YOE possible after 1 strong product stint — pehle India correction, phir dollar rate.</p>
+</section>
+
+<!-- 03 PROFILE -->
+<section class="section">
+  <div class="chapter-kicker">Chapter 03</div>
+  <h2 class="chapter">Senior Data Engineer profile — paper pe kaise dikhna hai</h2>
+  <p class="lead">Recruiter 10 second mein decide karti hai. 5 YOE ko “learning Spark” nahi likhna. <strong>Owning pipelines at scale</strong> likhna hai — numbers current job se nikaalo, even if company services hai.</p>
+
+  <h3>Positioning statement (copy, edit, use everywhere)</h3>
+  <div class="codeblock">Senior Data Engineer | 5 years building production data platforms
+Spark · SQL · Python · [AWS or Azure] · Databricks/Delta · Airflow · dbt
+I design, build and operate batch + incremental pipelines with SLAs, data quality
+and cost control — from ingestion to modeled warehouse / lakehouse tables
+used by analytics and downstream apps.</div>
+
+  <h3>LinkedIn headline (pick one)</h3>
+  <ul>
+    <li>Data Engineer (5 YOE) | PySpark · SQL · Databricks · Airflow | Building reliable lakehouse pipelines</li>
+    <li>Senior Data Engineer | Spark performance · dbt · Kafka | Ex-[Company] | Open to Product / GCC</li>
+  </ul>
+
+  <h3>Skill block — recruiter/ATS ke liye (group karke)</h3>
+  <table class="data">
+    <tr><th>Group</th><th>Write this (honest only)</th><th>Mat likho agar fake hai</th></tr>
+    <tr><td>Languages</td><td>SQL (expert), Python, PySpark</td><td>Scala, Java — unless real</td></tr>
+    <tr><td>Processing</td><td>Apache Spark, Spark SQL, Structured Streaming (if true)</td><td>Hadoop, MapReduce, Hive as headline</td></tr>
+    <tr><td>Orchestration</td><td>Airflow / Azure Data Factory / Glue Workflows (jo actual hai)</td><td>10 orchestrators</td></tr>
+    <tr><td>Transform / quality</td><td>dbt, Great Expectations / dbt tests</td><td>Monte Carlo if never used</td></tr>
+    <tr><td>Storage</td><td>Delta Lake / Iceberg, Parquet, S3/ADLS, Snowflake or BigQuery or Redshift or Synapse</td><td>Every warehouse logo</td></tr>
+    <tr><td>Streaming</td><td>Kafka, CDC (Debezium/DMS) — after Phase 5</td><td>Flink + Pulsar + Kinesis saath</td></tr>
+    <tr><td>Cloud</td><td>One: AWS or Azure or GCP + IAM + cost basics</td><td>Multi-cloud expert</td></tr>
+    <tr><td>DevEx</td><td>Git, CI/CD, Docker, Terraform (bonus)</td><td>K8s guru unless true</td></tr>
+  </table>
+
+  <h3>5-year story — 1 paragraph (HM round)</h3>
+  <div class="codeblock">I spent 5 years in data engineering, mostly [batch ETL / warehouse / reports]
+for [domain: banking / retail / telecom]. I owned [X pipelines / Y tables]
+serving [Z users]. The gap I am closing now is production Spark performance,
+lakehouse modeling (Delta + dbt), and streaming/CDC — and I want to do that
+inside a product or GCC team where data is a core platform, not a ticket queue.</div>
+  <p>Honesty plus ambition. “Mera previous company kharab thi” mat bolna. “Platform ownership chahiye” bolna.</p>
+
+  <h3>Numbers nikaalo current job se (mandatory homework, week 1)</h3>
+  <ul class="check">
+    <li>Daily/weekly data volume: GB or billion rows</li>
+    <li>Number of pipelines you touch; which ones you <em>own</em></li>
+    <li>SLA: dashboard by 8am? freshness 1 hour?</li>
+    <li>Worst incident: duration, root cause, your fix</li>
+    <li>Any runtime drop or cost save (even 20% counts)</li>
+    <li>Downstream: finance MIS, ML features, product analytics?</li>
+    <li>Stack exact names + versions if possible</li>
+  </ul>
+  <p class="tiny">Agar volume nahi pata — Spark UI / job history / warehouse query history / S3 size se nikaalo. “Pata nahi” 5 YOE pe red flag hai.</p>
+
+  <h3>Services language → product/GCC language (5 YOE translation)</h3>
+  <p>Same work, different words. Recruiter ATS aur HM dono yahi filter karte hain.</p>
+  <table class="data">
+    <tr><th>Mat likho (services)</th><th>Likho (senior DE)</th></tr>
+    <tr><td>Worked on multiple client requirements in Agile</td><td>Owned daily ELT for [domain] used by [N] analysts; SLA 07:00</td></tr>
+    <tr><td>Developed mappings in Informatica / ADF pipelines</td><td>Built incremental Spark/dbt models (MERGE) on [cloud] with tests</td></tr>
+    <tr><td>Involved in data extraction from source systems</td><td>Ingested CDC/batch from [Oracle/SQL Server/API] into bronze Delta/S3</td></tr>
+    <tr><td>Created reports for stakeholders</td><td>Published gold marts (grain: 1 row per order) consumed by Looker/Power BI</td></tr>
+    <tr><td>Handled production issues</td><td>On-call: cut MTTR from [x]h to [y]m with alerting + runbooks</td></tr>
+    <tr><td>Optimized queries as needed</td><td>Tuned Spark job via UI: shuffle [A]→[B] GB, runtime [T1]→[T2]</td></tr>
+    <tr><td>Knowledge of Hadoop ecosystem</td><td>Delete. Write Spark/Delta/cloud you actually ran.</td></tr>
+  </table>
+</section>
+
+<!-- 04 ORDER -->
+<section class="section">
+  <div class="chapter-kicker">Chapter 04</div>
+  <h2 class="chapter">Chronological skill order — 5 YOE compressed</h2>
+  <p class="lead">Beginner 12-month path mat follow karo. 5 saal baad order yeh hai: <strong>depth pehle, naya tool baad mein.</strong></p>
+
+  <table class="data">
+    <tr><th>#</th><th>Skill</th><th>When</th><th>5 YOE bar (itna hi kaafi nahi)</th><th>Interview signal</th></tr>
+    <tr><td>1</td><td>SQL expert + query plans</td><td>Month 1</td><td>Windows, gaps-and-islands, incremental MERGE, partition pruning</td><td>Every company, round 1</td></tr>
+    <tr><td>2</td><td>Python for pipelines</td><td>Month 1</td><td>typing, pytest, retries, dataclasses, not pandas-only</td><td>Product coding round</td></tr>
+    <tr><td>3</td><td>Data modeling</td><td>Month 1–2</td><td>Grain, star, SCD2, late-arriving facts, conformed dimensions</td><td>Design + dbt round</td></tr>
+    <tr><td>4</td><td>Spark internals + tuning</td><td>Month 2–3</td><td>Shuffle, skew, AQE, broadcast, file sizing, spill, UI</td><td>Biggest salary lever</td></tr>
+    <tr><td>5</td><td>Airflow (or equivalent) production</td><td>Month 3</td><td>Idempotency, backfill, SLAs, pools, sensors, data-aware scheduling</td><td>GCC + product</td></tr>
+    <tr><td>6</td><td>dbt + tests + contracts</td><td>Month 3–4</td><td>Incremental, snapshots, exposures, CI</td><td>Modern product stack</td></tr>
+    <tr><td>7</td><td>One cloud + lakehouse</td><td>Month 4–5</td><td>Medallion, IAM, cost, Databricks Jobs or Snowflake tasks</td><td>JD keyword #1 after Spark</td></tr>
+    <tr><td>8</td><td>Kafka + CDC</td><td>Month 5</td><td>Offsets, partitions, exactly-once, late data, when NOT to stream</td><td>28%+ pay premium</td></tr>
+    <tr><td>9</td><td>Data system design</td><td>Month 5–6</td><td>SLA, replay, DQ, cost, CDC vs batch, Iceberg/Delta</td><td>Senior bar</td></tr>
+    <tr><td>10</td><td>AI-adjacent data (optional premium)</td><td>Month 6+</td><td>Feature tables, embedding/RAG ingestion, unstructured → lakehouse</td><td>Differentiator, not core</td></tr>
+  </table>
+
+  <div class="callout warn">
+    <div class="label">Skip list (5 YOE timepass)</div>
+    MapReduce, Pig, Oozie, Tableau-first path, Power BI certification as DE headline, learning 3 clouds, Kubernetes-from-zero unless platform team, Kaggle as DE proof, 6 Udemy certificates without GitHub.
+  </div>
+
+  <h3>Cloud pick (ek, deep)</h3>
+  <div class="grid-2">
+    <div class="card">
+      <span class="tag">If JDs around you are Azure / banks / GCC</span>
+      <h4>Azure + Databricks</h4>
+      <p>ADLS Gen2, ADF or Airflow, Databricks (Delta, Unity Catalog, Jobs), Synapse/Snowflake optional. Cert: DP-203 after project, not before.</p>
+    </div>
+    <div class="card">
+      <span class="tag">If startups / product / Amazon-like</span>
+      <h4>AWS + Databricks or Glue/EMR + Athena</h4>
+      <p>S3, IAM, Glue or EMR/Spark, MWAA/Airflow, Redshift or Snowflake. Cert: AWS Data Engineer Associate after one deployed pipeline.</p>
+    </div>
+  </div>
+  <p>GCP only if current job already GCP/BigQuery heavy. Nayi cloud mat add karo “resume pe accha lage”. 5 YOE pe depth jeet-ti hai.</p>
+</section>
+
+<!-- 05 PHASES -->
+<section class="section">
+  <div class="chapter-kicker">Chapter 05</div>
+  <h2 class="chapter">6-month sprint — month by month + resources</h2>
+  <p class="lead">Job ke saath <strong>10–12 hours / week</strong>. Weekend pe 5–6 hours project. Weeknights 60–75 min SQL/Spark/design. Certificate last, GitHub first.</p>
+
+  <!-- M1 -->
+  <div class="phase">
+    <div class="phase-head"><div class="when">Weeks 1–4 · no new shiny tools</div><div class="title">Month 1 — Foundation reset (senior bar)</div></div>
+    <div class="phase-body">
+      <p><strong>Goal:</strong> SQL + Python + modeling itne tight ho ki product round 1 clear. Resume v1 live. Numbers homework complete.</p>
+      <h4>SQL — expert checklist</h4>
+      <ul>
+        <li>Window functions: RANK/DENSE_RANK, LAG/LEAD, running totals, sessionization</li>
+        <li>Gaps-and-islands, top-N per group, dedupe, SCD2 query patterns</li>
+        <li>JOIN types including anti-join / semi-join; EXISTS vs IN</li>
+        <li>Incremental load: MERGE / INSERT OVERWRITE partitions</li>
+        <li>Tuning: EXPLAIN, partition pruning, clustering/clustering keys, file skip</li>
+      </ul>
+      <h4>Python — pipeline, not notebook</h4>
+      <ul>
+        <li>Functions, pathlib, logging, retries (tenacity), argparse</li>
+        <li>pytest for transforms; type hints; virtualenv</li>
+        <li>Small API ingest script with backoff + schema check</li>
+      </ul>
+      <p class="res"><strong>Resources</strong></p>
+      <ul class="res">
+        <li><a href="https://mode.com/sql-tutorial/">Mode SQL Tutorial</a> — rewrite mentally as “I already know this, speed-run”</li>
+        <li><a href="https://selectstarsql.com/">Select Star SQL</a> — windows</li>
+        <li><a href="https://leetcode.com/problemset/database/">LeetCode Database</a> — 80–100 Q, hard included (5 YOE bar)</li>
+        <li><a href="https://use-the-index-luke.com/">Use The Index, Luke</a> — plans / indexes</li>
+        <li>Book: <em>The Data Warehouse Toolkit</em> (Kimball) — star / SCD chapters only</li>
+        <li><a href="https://docs.pytest.org/">pytest docs</a> + <a href="https://realpython.com/">Real Python — logging, pathlib</a></li>
+        <li>Practice warehouse: <a href="https://sqlpad.io/">SQLPad</a> / <a href="https://www.hackerrank.com/domains/sql">HackerRank SQL advanced</a></li>
+      </ul>
+      <p><strong>Milestone:</strong> 40 LeetCode DB done · 1-page modeling of your current job’s core fact · Resume v1 on LinkedIn.</p>
+    </div>
+  </div>
+
+  <!-- M2-3 -->
+  <div class="phase">
+    <div class="phase-head"><div class="when">Weeks 5–12</div><div class="title">Month 2–3 — Spark performance (salary engine)</div></div>
+    <div class="phase-body">
+      <p><strong>Goal:</strong> “I can read Spark UI and fix a slow job” — yeh sentence interview mein proof ke saath. Syntax wale DE 18 LPA. Tuner 30+.</p>
+      <h4>Deep list (is sequence mein)</h4>
+      <ol class="steps">
+        <li>Driver vs executor, cores, partitions, tasks, stages</li>
+        <li>Narrow vs wide; shuffle write/read; exchange in plan</li>
+        <li>Parquet layout, 128–256 MB files, too-small files problem</li>
+        <li>Partitioning vs bucketing; when not to partition on high-cardinality</li>
+        <li>Joins: broadcast vs sort-merge; skew (salting, AQE skew join)</li>
+        <li>AQE, adaptive coalescing, dynamic partition pruning</li>
+        <li>Caching vs checkpoint; spill to disk; OOM patterns</li>
+        <li>Delta Lake: MERGE, Z-order/OPTIMIZE, vacuum, time travel</li>
+      </ol>
+      <p class="res"><strong>Resources</strong></p>
+      <ul class="res">
+        <li><a href="https://spark.apache.org/docs/latest/sql-programming-guide.html">Spark SQL programming guide</a></li>
+        <li>Book: <em>Learning Spark</em> (O’Reilly, 2nd ed.) — chapters on SQL, joins, tuning</li>
+        <li><a href="https://www.databricks.com/discover/pages/optimize-data-workloads-guide">Databricks Spark optimization guide</a></li>
+        <li><a href="https://docs.delta.io/latest/index.html">Delta Lake docs</a></li>
+        <li>YouTube: Spark UI walkthroughs (Databricks official + SparkByExamples for API only)</li>
+        <li>Dataset: NYC TLC trip data / GitHub archive — 10GB+ compulsory</li>
+      </ul>
+      <p><strong>Milestone — Project A started:</strong> 10GB+ batch job. Before/after: runtime + shuffle bytes + cost note in README.</p>
+    </div>
+  </div>
+
+  <!-- M3-4 -->
+  <div class="phase">
+    <div class="phase-head"><div class="when">Weeks 10–16 · product companies yahi poochti hain</div><div class="title">Month 3–4 — Airflow + dbt + quality</div></div>
+    <div class="phase-body">
+      <p><strong>Goal:</strong> Ticket-runner nahi, <em>data product owner</em>. Tests, docs, backfill, idempotent DAG.</p>
+      <ul>
+        <li><strong>Airflow:</strong> DAG design, task vs DAG failure, retries, pools, sensors, datasets (data-aware), backfill, catchup off, idempotent tasks, Slack/email on fail</li>
+        <li><strong>dbt:</strong> staging/intermediate/marts, ref/source, incremental merge, snapshots (SCD2), tests (unique, not_null, accepted_values, relationships), docs generate, slim CI</li>
+        <li><strong>Quality:</strong> freshness + volume + null spikes. dbt tests pehle; Great Expectations/Soda extra</li>
+      </ul>
+      <p class="res"><strong>Resources</strong></p>
+      <ul class="res">
+        <li><a href="https://academy.astronomer.io/">Astronomer Academy</a> (Airflow fundamentals + DAG writing) — free</li>
+        <li><a href="https://airflow.apache.org/docs/">Apache Airflow docs</a> — especially best practices + data-aware scheduling</li>
+        <li><a href="https://learn.getdbt.com/courses/fundamentals">dbt Fundamentals</a> + <a href="https://docs.getdbt.com/best-practices">dbt Best Practices</a></li>
+        <li><a href="https://github.com/DataTalksClub/data-engineering-zoomcamp">DataTalks.Club DE Zoomcamp</a> — modules skip karke Airflow/dbt/batch use karo, beginner videos skip</li>
+        <li><a href="https://greatexpectations.io/">Great Expectations</a> docs — 5 tests on your mart</li>
+      </ul>
+      <p><strong>Milestone — Project B:</strong> ingest → bronze → dbt marts (SCD2) → Airflow daily → tests in CI.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section keep">
+  <div class="phase">
+    <div class="phase-head"><div class="when">Weeks 14–20</div><div class="title">Month 4–5 — One cloud lakehouse (Databricks or Snowflake)</div></div>
+    <div class="phase-body">
+      <p><strong>Goal:</strong> Notebook tourist nahi. Jobs, IAM, medallion, Unity Catalog/RBAC, cost dashboard. India 2026 JDs: <strong>Databricks</strong> hottest, Snowflake close second.</p>
+      <ul>
+        <li>Medallion: bronze raw, silver cleaned, gold dimensional / business</li>
+        <li>Databricks: clusters vs SQL warehouse, Jobs, Delta Live / Lakeflow if available, Asset Bundles + GitHub Actions</li>
+        <li>Snowflake path: warehouses, micro-partitions, clustering, tasks+streams, cost per query</li>
+        <li>Security: least-privilege IAM, secrets not in notebooks</li>
+        <li>Cost: job ₹500 vs ₹50,000 — same data, different plan</li>
+      </ul>
+      <p class="res"><strong>Resources</strong></p>
+      <ul class="res">
+        <li><a href="https://www.databricks.com/learn/training/home">Databricks Academy — Lakehouse fundamentals + DE associate path</a></li>
+        <li><a href="https://docs.databricks.com/en/dev-tools/bundles/index.html">Databricks Asset Bundles</a> + GitHub Actions CI</li>
+        <li><a href="https://learn.snowflake.com/">Snowflake Hands-on Essentials</a> (free badge)</li>
+        <li>AWS: <a href="https://skillbuilder.aws/">Skill Builder data path</a> · Azure: <a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-data-engineer/">DP-203 learn path</a></li>
+        <li>Well-Architected analytics lens (AWS) / Azure Cloud Adoption data landing zone docs</li>
+      </ul>
+      <p><strong>Cert timing:</strong> Project cloud pe chalane ke <em>baad</em> Databricks DE Associate ya DP-203 / AWS DEA-C01. 5 YOE pe cert without project = services signal.</p>
+    </div>
+  </div>
+
+  <div class="phase">
+    <div class="phase-head"><div class="when">Weeks 18–22</div><div class="title">Month 5 — Kafka + CDC (premium band)</div></div>
+    <div class="phase-body">
+      <p><strong>Goal:</strong> Streaming hype nahi — <em>offsets, partitions, consumer groups, replay, late events, exactly-once sinks</em>. Senior signal: kab batch kaafi hai.</p>
+      <ul>
+        <li>Kafka 101 then production: replication, ISR, key-based partitioning</li>
+        <li>CDC: Debezium or AWS DMS — DB binlog → Kafka → lakehouse MERGE</li>
+        <li>Spark Structured Streaming: watermark, window, checkpoint, trigger</li>
+        <li>Failure: consumer lag, poison pill, schema evolution (Schema Registry)</li>
+      </ul>
+      <p class="res"><strong>Resources</strong></p>
+      <ul class="res">
+        <li><a href="https://developer.confluent.io/courses/apache-kafka/intro/">Confluent Kafka 101</a> (free) then Kafka Streams only if time</li>
+        <li><a href="https://kafka.apache.org/documentation/">Kafka official docs</a> — design section</li>
+        <li><a href="https://debezium.io/documentation/">Debezium documentation</a></li>
+        <li><a href="https://iceberg.apache.org/">Apache Iceberg</a> + Delta MERGE as sink patterns</li>
+        <li>Book (slow read months 1–6): <em>Designing Data-Intensive Applications</em> — Ch. 1–3, 8–11</li>
+      </ul>
+      <p><strong>Milestone — Project C:</strong> CDC or clickstream → Kafka → Delta/Iceberg → documented late-data + replay.</p>
+    </div>
+  </div>
+
+  <div class="phase">
+    <div class="phase-head"><div class="when">Weeks 22–26 · offers yahan se</div><div class="title">Month 6 — System design + interview engine</div></div>
+    <div class="phase-body">
+      <p><strong>Goal:</strong> Whiteboard pe 45 min: “Design Uber trip pipeline / Stripe ledger warehouse / 100M events/day clickstream.” Apply 40 roles. 8 STAR stories. Mocks.</p>
+      <p class="res"><strong>Resources</strong></p>
+      <ul class="res">
+        <li>DDIA (continue) — replication, partitioning, stream processing chapters</li>
+        <li>YouTube: “data engineering system design” (Alex Xu-style but data: batch vs stream, storage, DQ)</li>
+        <li>Educative / ByteByteGo data-oriented case studies if budget</li>
+        <li>Mocks: Pramp / interview buddy / Exponent DE videos — pause and answer yourself</li>
+      </ul>
+      <p><strong>Milestone:</strong> 2–3 onsite loops. Target offer 28–38 LPA. Walk-away below 24 unless ESOPs insane + brand.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 06 PROJECTS -->
+<section class="section">
+  <div class="chapter-kicker">Chapter 06</div>
+  <h2 class="chapter">3 flagship projects — 5 YOE interview converters</h2>
+  <p class="lead">Tutorials clone mat karo. Har repo mein: architecture diagram, SLA, failure modes, backfill, cost, Spark UI screenshot, “what I would do at 10× scale”.</p>
+
+  <h3>Project A — Batch lakehouse (Spark tuner story)</h3>
+  <div class="card" style="margin-bottom:4mm;">
+    <p><strong>Story line:</strong> “I ingested NYC taxi / e-commerce events (~10–50GB), built bronze-silver-gold, cut job time from X → Y by fixing shuffle, file sizing and skew.”</p>
+    <p><strong>Stack:</strong> PySpark + Delta on Databricks community / local Spark + S3-compatible (MinIO) · GitHub Actions pytest on transforms</p>
+    <p><strong>Must show:</strong> partition columns, OPTIMIZE/compaction, before-after Spark UI, cost estimate table</p>
+    <p><strong>README sections:</strong> Problem · Architecture · Data model · Tuning log · How to run · Next (streaming)</p>
+  </div>
+
+  <h3>Project B — Warehouse as a product (Airflow + dbt)</h3>
+  <div class="card" style="margin-bottom:4mm;">
+    <p><strong>Story line:</strong> “Daily ELT from public API + Postgres dump into modeled marts with SCD2 customer dimension, tested in CI, SLA 07:00.”</p>
+    <p><strong>Stack:</strong> Airflow (Docker) + dbt Core + Postgres or Snowflake trial + Great Expectations</p>
+    <p><strong>Must show:</strong> lineage screenshot (dbt docs), failed test → pipeline stop, backfill runbook, idempotent DAG</p>
+    <p><strong>Senior twist:</strong> data contract YAML (owner, SLA, grain) for 2 marts</p>
+  </div>
+
+  <h3>Project C — CDC / streaming (premium)</h3>
+  <div class="card" style="margin-bottom:4mm;">
+    <p><strong>Story line:</strong> “Orders table CDC via Debezium → Kafka → Spark Structured Streaming MERGE into Delta. Late updates 2 hours. Exactly-once via checkpoint + idempotent merge keys.”</p>
+    <p><strong>Stack:</strong> Docker Compose: Postgres + Debezium + Kafka + Spark + MinIO/Delta</p>
+    <p><strong>Must show:</strong> why MERGE keys, watermark choice, what happens if consumer down 3 hours, schema evolution plan</p>
+    <p><strong>Skip if:</strong> Month 6 interviews already coming — Project A+B rock solid better than half C.</p>
+  </div>
+
+  <div class="callout">
+    <div class="label">Public GitHub hygiene (5 YOE)</div>
+    Repo name: <code>nyc-taxi-delta-lakehouse</code> not <code>spark-practice</code>. Pin architecture PNG. LICENSE. No secrets. English README. LinkedIn pe 3 posts: tuning, SCD2, CDC late-data — each 8–12 lines + diagram.
+  </div>
+</section>
+
+<!-- 07 RESUME -->
+<section class="section">
+  <div class="chapter-kicker">Chapter 07</div>
+  <h2 class="chapter">Resume + LinkedIn rewrite — 5 YOE</h2>
+  <p class="lead">1 page (max 2 if 2 companies). PDF. Metrics. Tools grouped. <strong>ETL developer language hatao.</strong></p>
+
+  <h3>Header</h3>
+  <div class="codeblock">NAME  |  Bangalore  |  +91-XXXXXXXXXX  |  email  |  LinkedIn  |  GitHub
+Data Engineer  ·  5 years  ·  PySpark, SQL, Python, Databricks/Spark, Airflow, dbt, AWS/Azure</div>
+
+  <h3>Summary (4 lines, no fluff)</h3>
+  <div class="codeblock">Data engineer with 5 years building and operating production ETL/ELT
+pipelines on [Spark/cloud]. Owned freshness SLAs for [N] downstream
+dashboards/models; reduced [job] runtime by [x%] and improved
+reliability via tests, incremental loads and monitoring.
+Seeking Senior Data Engineer roles in product / GCC teams.</div>
+
+  <h3>Bullet formula (har line)</h3>
+  <p><code>Verb + system + scale + method + result</code></p>
+  <div class="codeblock">Weak:  Worked on Spark jobs for sales data in Azure.
+Strong: Rebuilt 12 Spark ETL jobs (≈180M rows/day) on Databricks Delta;
+        cut cluster hours 41% via repartition, broadcast joins and
+        file compaction; dashboard SLA 06:30 → 05:10.</div>
+
+  <h3>Experience section — 5 YOE pattern</h3>
+  <ul>
+    <li>Latest role: 5–7 bullets (ownership first)</li>
+    <li>Previous: 3–4 bullets</li>
+    <li>Agar 5 saal same company: split by project/promotion internally</li>
+    <li>Client names if allowed (banks love GCC keywords: payments, ledger, risk)</li>
+    <li>Do not list 15 tools in one bullet</li>
+  </ul>
+
+  <h3>Steal-able bullet bank (numbers apne se badlo)</h3>
+  <ul>
+    <li>Designed star-schema model (orders fact + 6 dims, SCD2 customer) used by finance MIS; reduced ad-hoc Excel extracts ~70%.</li>
+    <li>Implemented incremental MERGE on [table], dropping full refresh from 4.5h to 38m; enabled same-day restatements.</li>
+    <li>Added Airflow SLAs + retries + alerting; dropped silent overnight failures from ~6/month to 1.</li>
+    <li>Standardized Parquet file sizes (~128MB) and partition spec (event_date, country); scan cost down [x]%.</li>
+    <li>Built dbt test suite (82 tests) in CI; blocked 3 bad loads from reaching gold in first month.</li>
+    <li>Documented runbooks for backfill and late-arriving facts; onboarding time for new joiner ~2 weeks → 4 days.</li>
+  </ul>
+
+  <h3>What to delete</h3>
+  <ul>
+    <li>“Team player, hard working, MS Office, Windows”</li>
+    <li>Academic projects if 5 YOE unless famous OSS</li>
+    <li>Every Hadoop ecosystem logo</li>
+    <li>Objective: “To work in a challenging environment…”</li>
+    <li>Photo, DOB, father name, religion, passport (India product/GCC)</li>
+  </ul>
+
+  <h3>LinkedIn outreach (short)</h3>
+  <div class="codeblock">Hi [Name] — I’m a data engineer (5 YOE, Spark/SQL/[cloud]) targeting
+Senior DE roles on your team. I recently published a lakehouse project
+with Spark tuning notes + dbt tests: [link]. If you’re open to a
+referral for [Job ID], I can send a 5-line fit summary.</div>
+  <p>20 hiring managers / senior DEs per week. 3 lines. Link project, not resume dump.</p>
+
+  <h3>Copy-paste 5 YOE resume skeleton (1 page — numbers replace karo)</h3>
+  <div class="codeblock">RAHUL SHARMA  ·  Hyderabad  ·  rahul@email.com  ·  linkedin.com/in/rahul  ·  github.com/rahul
+Data Engineer  ·  5 years  ·  SQL · Python · PySpark · Databricks/Delta · Airflow · dbt · Azure/AWS
+
+SUMMARY
+Data engineer with 5 years building production batch ELT on Spark and [Azure/AWS].
+Owned freshness SLAs for finance + product analytics (≈[X] GB/day). Reduced a
+critical Spark job [4.5h → 42m] and added tests so bad data cannot reach gold.
+
+EXPERIENCE
+Company A — Data Engineer                          2022 – present
+• Owned 14 production Spark jobs (≈120–200M rows/day) on Databricks Delta;
+  cut cluster hours 37% via broadcast joins, 128MB file compaction, partition repair.
+• Modeled orders star schema (fact + 5 dims, SCD2 customer) used by 18 analysts;
+  replaced ad-hoc SQL extracts with dbt marts + 70 tests in CI.
+• Built Airflow DAGs with retries, SLAs and Slack alerts; silent overnight
+  failures ~6/month → 1. Wrote backfill runbook (idempotent partition overwrite).
+• Implemented incremental MERGE for [table]; same-day restatement for finance close.
+
+Company B — Data Engineer / ETL                    2021 – 2022
+• Migrated 9 Informatica workflows to Spark/ADF; validated row counts ±0.01%.
+• Landed source extracts to ADLS/S3 Parquet; documented grain and late-data rules.
+
+PROJECTS (GitHub)
+• nyc-taxi-delta-lakehouse — 10GB+ medallion; Spark UI before/after + cost note
+• orders-dbt-airflow — SCD2 + tested marts + daily DAG
+
+SKILLS
+SQL (windows, incremental, plans) · PySpark · Python/pytest · Delta Lake
+Airflow · dbt · [Azure: ADF, ADLS, Databricks] · Git · CI</div>
+</section>
+
+<!-- 08 INTERVIEWS -->
+<section class="section">
+  <div class="chapter-kicker">Chapter 08</div>
+  <h2 class="chapter">Interview playbook — badi companies kya poochti hain</h2>
+  <p class="lead">5 YOE loop typically: recruiter → SQL/Python → Spark/stack → system design → hiring manager. Services-style “what is RDD” pe mat atko — <strong>trade-offs + production stories</strong>.</p>
+
+  <h3>Round map</h3>
+  <table class="data">
+    <tr><th>Round</th><th>Duration</th><th>Bar at 5 YOE</th></tr>
+    <tr><td>Recruiter</td><td>20–30m</td><td>Notice, CTC, location, why leaving, stack match. Ask team’s data scale.</td></tr>
+    <tr><td>SQL live</td><td>45–60m</td><td>2–3 hard queries + optimize. Talk plan. Don’t stay silent.</td></tr>
+    <tr><td>Python / coding</td><td>45m</td><td>Medium: dicts, heaps, parsing logs, not ICPC. Clean functions + tests talk.</td></tr>
+    <tr><td>Spark / DE deep dive</td><td>60m</td><td>UI, skew, joins, Delta MERGE, your project grilling.</td></tr>
+    <tr><td>System design</td><td>45–60m</td><td>Clarify SLA, grain, volume, fail modes, cost, backfill, DQ.</td></tr>
+    <tr><td>HM / behavioral</td><td>45m</td><td>Conflict, ownership, “tell me a miss”, why product/GCC, 5-year arc.</td></tr>
+  </table>
+
+  <h3>SQL — 5 YOE question types (drill these)</h3>
+  <ul>
+    <li>Latest order per customer; running GMV; WoW growth</li>
+    <li>Sessionize events (30-min gap)</li>
+    <li>SCD2 point-in-time: “customer segment on order date”</li>
+    <li>Find overlapping intervals / consecutive days streaks</li>
+    <li>“This query scans 12TB, how do you fix?” (partition, clustering, predicate pushdown, pre-agg)</li>
+  </ul>
+  <p>Practice aloud. Interviewer process maangta hai, sirf final SELECT nahi.</p>
+
+  <h3>Spark — expected answers (short, exact)</h3>
+  <div class="grid-2">
+    <div class="card">
+      <h4>Shuffle</h4>
+      <p>Wide transformation se data exchange across executors. Costly due to disk + network. Reduce: pre-filter, broadcast small side, partition for join keys, AQE.</p>
+    </div>
+    <div class="card">
+      <h4>Skew</h4>
+      <p>One key explodes a partition. Symptoms: one task 10× longer. Fixes: salting, skew join (AQE), isolate hot key, two-phase agg.</p>
+    </div>
+    <div class="card">
+      <h4>Broadcast join</h4>
+      <p>Small table fits executor memory (and spark.sql.autoBroadcastJoinThreshold). Huge table nahi broadcast. After filter, stats matter.</p>
+    </div>
+    <div class="card">
+      <h4>Small files</h4>
+      <p>Thousands of tiny Parquet files = slow listing + tasks. Compact to ~128MB. coalesce vs repartition trade-off (shuffle).</p>
+    </div>
+  </div>
+
+  <h3>System design template (har question pe yeh order)</h3>
+  <ol class="steps">
+    <li><strong>Clarify:</strong> sources, volume (peak), latency SLA, retention, consumers (BI vs ML vs product), exactly-once need?</li>
+    <li><strong>Grain + model:</strong> facts/dims, keys, SCD, late data policy</li>
+    <li><strong>Batch vs stream vs CDC:</strong> say when batch wins (cheaper, simpler)</li>
+    <li><strong>Architecture:</strong> ingest → bronze → silver → gold; queue; warehouse; serving</li>
+    <li><strong>Reliability:</strong> retries, DLQ, idempotent sinks, replay from Kafka/offset or partition reload</li>
+    <li><strong>DQ + observability:</strong> tests, freshness alerts, lineage, on-call</li>
+    <li><strong>Cost + security:</strong> compute isolation, partition pruning, PII, IAM</li>
+    <li><strong>Scale 10×:</strong> what breaks first</li>
+  </ol>
+
+  <h3>Design prompts — weekly practice (write 1-page answers)</h3>
+  <ul>
+    <li>YouTube watch events: 100M/day, 5-min freshness for trending, 24h for finance</li>
+    <li>Ecommerce orders + refunds CDC, finance close T+1, inventory near-real-time</li>
+    <li>Bank core ledger → warehouse, 7-year retention, PII masking, SCD2 customer</li>
+    <li>IoT 10k devices, 1Hz metrics, downsample for ops dashboard</li>
+    <li>Migrate Informatica + on-prem Oracle to Databricks in 6 months (phased)</li>
+  </ul>
+
+  <h3>STAR stories — 8 likh ke ratlo (5 YOE gold)</h3>
+  <ol>
+    <li>Slow Spark job you diagnosed from UI</li>
+    <li>Pipeline silent fail / bad data reached dashboard</li>
+    <li>Ambiguous requirement, you defined grain/SLA</li>
+    <li>Conflict with analyst / PM on “wrong numbers”</li>
+    <li>Backfill of months of data without locking prod</li>
+    <li>Cost explosion you stopped</li>
+    <li>Mentored junior / documented runbook</li>
+    <li>Deadline miss — what you changed next time</li>
+  </ol>
+  <p>Format: Situation (2 lines) · Task · Action (3–5 technical steps) · Result (number).</p>
+
+  <h3>Sample STAR (ratlo, numbers apne se)</h3>
+  <div class="codeblock">Situation: Finance dashboard missed 08:00 SLA 4 times in a month. Job
+“fnl_orders_enrich” ran 4.5h, often after 08:20. Cluster cost also spiked.
+Task: I owned the job. Need &lt; 60 min, same numbers, no extra budget.
+Action: Spark UI showed 1 skewed stage (join on country=IN, 70% rows).
+Enabled AQE skew join, broadcast the 80MB dim, wrote 128MB Parquet
+instead of 12k tiny files, switched full refresh to MERGE on order_date
+(3-day lookback). Added duration + row-count alerts.
+Result: 4.5h → 42m. SLA green for 8 weeks. Cluster hours −41%.
+This is the story I tell in every Spark round.</div>
+
+  <div class="callout warn">
+    <div class="label">CTC / notice traps</div>
+    Recruiter: current 13, expectation <strong>28–35</strong> for product/GCC (range, not exact). “Flexible for the right platform role.” Notice: 30–90 as per bond; joining 60 days typical. 13 ko hide mat karo, <em>market correction</em> frame karo: “Band services wala tha; last 6 months Spark/lakehouse depth + ownership stories.”
+  </div>
+</section>
+
+<section class="section keep">
+  <h3>Python coding — typical DE set</h3>
+  <ul>
+    <li>Parse nested JSON logs → flatten to records</li>
+    <li>Top K frequent IPs (heap / Counter)</li>
+    <li>Iterator / generator for large file (memory)</li>
+    <li>Retry with exponential backoff sketch</li>
+    <li>Two-sum style easy-medium if FAANG; else data wrangling</li>
+  </ul>
+  <p>Resource: <a href="https://leetcode.com/">LeetCode</a> 40–60 medium (arrays, hash, strings, heap). 5 YOE DE ko CP-god nahi banna — clean code + complexity talk.</p>
+
+  <h3>Airflow / dbt / Kafka one-liners they love</h3>
+  <ul>
+    <li><strong>Idempotent DAG:</strong> rerun same day = same tables, no duplicates (partition overwrite or MERGE keys).</li>
+    <li><strong>Catchup vs backfill:</strong> catchup auto-runs missed intervals (dangerous); backfill is controlled.</li>
+    <li><strong>dbt incremental:</strong> unique_key + lookback window; know when to full-refresh.</li>
+    <li><strong>Kafka exactly-once:</strong> producer idempotence + transaction or sink idempotency (MERGE); “at-least-once + dedupe” often practical.</li>
+    <li><strong>Consumer group:</strong> scale = partitions ≥ consumers; lag = production KPI.</li>
+  </ul>
+</section>
+
+<!-- 09 90 DAY -->
+<section class="section">
+  <div class="chapter-kicker">Chapter 09</div>
+  <h2 class="chapter">90-day calendar + apply engine</h2>
+  <p class="lead">5 YOE ko 9-month course nahi chahiye. <strong>90 din mein interview-ready + 40 targeted applications.</strong> Projects parallel, not sequential-perfect.</p>
+
+  <table class="data">
+    <tr><th>Week</th><th>Build</th><th>Drill</th><th>Career</th></tr>
+    <tr><td>1</td><td>Numbers homework from current job</td><td>SQL 7 Q / weekdays</td><td>Resume v1, LinkedIn headline, GitHub polish</td></tr>
+    <tr><td>2</td><td>Kimball 1-pager of your domain</td><td>SQL hard + 1 Python script + pytest</td><td>10 recruiter searches saved (Tier A/B)</td></tr>
+    <tr><td>3–4</td><td>Project A skeleton + 10GB dataset</td><td>Spark architecture notes</td><td>5 informational chats</td></tr>
+    <tr><td>5–6</td><td>Project A tuning log (before/after)</td><td>Spark UI + join strategy drills</td><td>Resume v2 with Project A bullets</td></tr>
+    <tr><td>7–8</td><td>Project B Airflow + dbt staging</td><td>LeetCode DB 5/week + Python 3/week</td><td>10 referrals messages</td></tr>
+    <tr><td>9–10</td><td>dbt marts + SCD2 + tests CI</td><td>First 2 system-design writeups</td><td>Start applying: 8 jobs/week</td></tr>
+    <tr><td>11–12</td><td>Cloud deploy Project A or B; cert only if extra time</td><td>Mock SQL + mock design</td><td>8 jobs/week + follow-ups</td></tr>
+    <tr><td>13+</td><td>Project C if interviews not yet; else interview only</td><td>STAR stories aloud</td><td>Loops, negotiate, don’t freeze applying</td></tr>
+  </table>
+
+  <h3>Weekly hours (job ke saath)</h3>
+  <table class="data">
+    <tr><th>Block</th><th>Time</th><th>What</th></tr>
+    <tr><td>Weeknights × 4</td><td>70 min</td><td>SQL / Spark internals / design prompt</td></tr>
+    <tr><td>Saturday</td><td>4 hrs</td><td>Project build</td></tr>
+    <tr><td>Sunday</td><td>3 hrs</td><td>Project + LinkedIn + applications</td></tr>
+    <tr><td>Friday night</td><td>30 min</td><td>Log: what shipped this week (keep a brag doc)</td></tr>
+  </table>
+
+  <h3>Application engine (volume with quality)</h3>
+  <ul>
+    <li>Target: <strong>40 applications in weeks 9–14</strong> — only Tier A/B/C/D from Chapter 02</li>
+    <li>Naukri/Instahyre/Cutshort/LinkedIn Easy Apply + <em>always</em> 1 employee message</li>
+    <li>JD se 6 keywords resume pe naturally (Spark, Databricks, Airflow, Python, SQL, AWS/Azure)</li>
+    <li>Track spreadsheet: company, role, date, referral, status, next follow-up</li>
+    <li>Ghosting normal hai. 7 din baad polite bump.</li>
+  </ul>
+
+  <div class="callout ok">
+    <div class="label">Don’t wait to be “100% ready”</div>
+    Week 9 se apply. Interviews khud bata denge weak area. 5 YOE pe learning in public + live loops > 6 aur months hiding.
+  </div>
+</section>
+
+<!-- 10 NEGOTIATION -->
+<section class="section">
+  <div class="chapter-kicker">Chapter 10</div>
+  <h2 class="chapter">Offers, negotiation, checklists</h2>
+
+  <h3>Anchor</h3>
+  <table class="data">
+    <tr><th>Situation</th><th>Ask / walk-away</th></tr>
+    <tr><td>First product/GCC offer, 1 offer only</td><td>Ask 32–36 if they opened 28. Walk-away &lt; 24 unless brand + learning insane (Amazon SDE-T type may still be worth it).</td></tr>
+    <tr><td>2+ offers</td><td>Play written competing offer. 10–18% extra common.</td></tr>
+    <tr><td>Current 13, they lowball 18 “50% hike”</td><td>Politely reject. 50% hike services math hai, 5 YOE market nahi.</td></tr>
+    <tr><td>ESOPs heavy startup 24 + 0.0x%</td><td>Discount ESOP. Cash 28+ safer for correction.</td></tr>
+  </table>
+
+  <h3>Script</h3>
+  <div class="codeblock">I’m excited about the team and the data platform problems.
+Based on 5 years of production DE and the senior scope we discussed,
+I was expecting CTC in the 32–36 LPA range. If you can revise the
+cash component, I’m ready to sign this week.</div>
+
+  <h3>Joining</h3>
+  <p>Buyout/notice: get offer letter before resign. Don’t resign on verbal. Background verification: keep payslips, increment letters. Non-compete usually weak in India for DE but don’t steal data/code.</p>
+
+  <h3>18-month second jump (40–55)</h3>
+  <ul>
+    <li>Year 1 in product/GCC: own a domain end-to-end, on-call, cost, 1 streaming or CDC production</li>
+    <li>Staff-track signals: design docs, multi-team APIs, SLAs others depend on</li>
+    <li>Then: Databricks/Snowflake/FAANG-class or Staff DE internal promo</li>
+  </ul>
+</section>
+
+<section class="section keep">
+  <h3>Final packing list</h3>
+  <div class="grid-2">
+    <div class="card">
+      <h4>Ship</h4>
+      <ul class="check">
+        <li>Resume 1-pager, metrics, PDF</li>
+        <li>LinkedIn headline + 3 project posts</li>
+        <li>GitHub: Project A + B (C optional)</li>
+        <li>80 SQL questions + 8 STAR stories</li>
+        <li>5 design one-pagers</li>
+        <li>40 targeted applications</li>
+        <li>Salary range practiced aloud</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>Don’t</h4>
+      <ul>
+        <li>3 clouds, 12 certs, 0 repos</li>
+        <li>Services 15% hike as “win”</li>
+        <li>Title Junior / Trainee on resume</li>
+        <li>Fake Kafka/Databricks</li>
+        <li>Silence in SQL round</li>
+        <li>Apply only FAANG for 8 months</li>
+        <li>Resign before written offer</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Resource appendix (all links)</h3>
+  <ul class="res two-col">
+    <li><a href="https://mode.com/sql-tutorial/">mode.com/sql-tutorial</a></li>
+    <li><a href="https://selectstarsql.com/">selectstarsql.com</a></li>
+    <li><a href="https://leetcode.com/problemset/database/">leetcode.com/problemset/database</a></li>
+    <li><a href="https://use-the-index-luke.com/">use-the-index-luke.com</a></li>
+    <li><a href="https://spark.apache.org/docs/latest/sql-programming-guide.html">Spark SQL guide</a></li>
+    <li><a href="https://docs.delta.io/latest/index.html">docs.delta.io</a></li>
+    <li><a href="https://www.databricks.com/learn/training/home">Databricks Academy</a></li>
+    <li><a href="https://academy.astronomer.io/">academy.astronomer.io</a></li>
+    <li><a href="https://learn.getdbt.com/courses/fundamentals">dbt Fundamentals</a></li>
+    <li><a href="https://docs.getdbt.com/best-practices">dbt best practices</a></li>
+    <li><a href="https://github.com/DataTalksClub/data-engineering-zoomcamp">DE Zoomcamp</a></li>
+    <li><a href="https://developer.confluent.io/courses/apache-kafka/intro/">Confluent Kafka 101</a></li>
+    <li><a href="https://kafka.apache.org/documentation/">kafka.apache.org/documentation</a></li>
+    <li><a href="https://debezium.io/documentation/">debezium.io/documentation</a></li>
+    <li><a href="https://iceberg.apache.org/">iceberg.apache.org</a></li>
+    <li><a href="https://learn.snowflake.com/">learn.snowflake.com</a></li>
+    <li><a href="https://skillbuilder.aws/">skillbuilder.aws</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-data-engineer/">Azure DP-203 path</a></li>
+    <li><a href="https://greatexpectations.io/">greatexpectations.io</a></li>
+    <li>Books: Kimball Toolkit · Learning Spark 2e · DDIA</li>
+  </ul>
+
+  <div class="callout">
+    <div class="label">Closing</div>
+    5 years experience tumhara liability nahi, <strong>undervalued asset</strong> hai. Market 5 YOE DE ko 28–45 LPA isliye deti hai kyunki production judgment khareedti hai — tools nahi. Agle 90 din: depth, 2 repos, 8 stories, 40 applications. Badi companies ki “bharmaar” cold PDF se nahi, <strong>targeted loops + proof of Spark/SLA/ownership</strong> se aati hai.
+  </div>
+
+  <p class="footer-note">Playbook version 1.0 · Tailored for 5 YOE Data Engineer · Current 13 LPA · India product/GCC track 2026. Numbers are typical bands, not a guarantee. Update resume with only truthful metrics.</p>
+</section>
+
+</body>
+</html>
