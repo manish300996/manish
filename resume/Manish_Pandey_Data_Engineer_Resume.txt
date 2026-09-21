@@ -1,49 +1,47 @@
 MANISH PANDEY
-Data Engineer  |  Apache Spark  |  PySpark  |  Azure Databricks  |  dbt  |  SQL  |  Python  |  ETL  |  CDC
+Data Engineer  |  Spark  |  PySpark  |  Azure Databricks  |  dbt  |  Airflow  |  Kafka  |  SQL  |  Python  |  ETL  |  CDC
 Gurugram, India  |  +91-9140357957  |  mp4966@gmail.com  |  5 years
 
 SUMMARY
-Data Engineer with 5 years building production data pipelines, data warehouses / lakehouse tables, and CDC. Own the Staff Service Commission Candidate 360 platform: dbt ELT on Azure Databricks (Apache Spark / PySpark / Spark SQL, Delta Lake, ADLS), incremental loads, CI tests, Apache Superset. Also delivered production CDC (GoldenGate), Spark job tuning, ETL migrations, and GitLab CI/CD. Stack: SQL, Python, Spark, Azure, Databricks, dbt, ETL/ELT, CDC, data modeling, data quality.
+Data Engineer with 5 years of production ETL/ELT, Spark lakehouse, CDC / streaming, and warehouse work. Own SSC Candidate 360: dbt + Azure Databricks (Spark / PySpark / Delta / ADLS), orchestrated by Apache Airflow, tested in GitLab CI, served on Apache Superset. Also production Kafka pipelines, GoldenGate CDC, Azure Data Factory ETL, Spark tuning, and CI/CD.
 
 SKILLS
-Apache Spark, PySpark, Spark SQL, Python, SQL, Azure Databricks, Delta Lake, Azure, ADLS, dbt, ETL, ELT, CDC, Data Warehousing, Data Modeling, Data Pipelines, Lakehouse, GitLab CI/CD, Apache Superset, Oracle GoldenGate, ODI, Git, Incremental Load, SCD Type 2, Star Schema, Data Quality, Parquet
+Apache Spark, PySpark, Spark SQL, Spark Structured Streaming, Python, SQL, Azure Databricks, Delta Lake, Azure, ADLS, Azure Data Factory, dbt, Apache Airflow, Apache Kafka, ETL, ELT, CDC, Data Warehousing, Data Modeling, Data Pipelines, Lakehouse, GitLab CI/CD, Apache Superset, Oracle GoldenGate, ODI, Git, Incremental Load, SCD Type 2, Star Schema, Data Quality, Parquet
 
-Languages: Python, SQL (windows, MERGE, incremental, query plans), PySpark, Spark SQL, PL/SQL
+Languages: Python, SQL, PySpark, Spark SQL, PL/SQL
 Lakehouse: Azure Databricks, Apache Spark, Delta Lake, ADLS, dbt (bronze/silver/gold, incremental, tests), Apache Superset
-Pipelines: ETL, ELT, CDC, batch data pipelines, dimensional / star schema, SCD Type 2, data quality, lineage
-CDC & ETL: Oracle GoldenGate (Extract/Replicat, lag, recovery), ODI, Data Guard, Oracle, MariaDB
-Engineering: GitLab CI/CD, Git, Azure, production monitoring, incident RCA, runbooks
+Orchestration: Apache Airflow (DAGs, retries, SLA, backfill), Azure Data Factory, GitLab CI/CD
+Streaming / CDC: Apache Kafka (topics, partitions, consumer groups, lag), Spark Structured Streaming, Oracle GoldenGate
+Pipelines: ETL, ELT, batch + incremental, star schema, SCD Type 2, data quality, lineage, ODI, Oracle, MariaDB
 
 EXPERIENCE
 Data Engineer (Consultant) — Cubastion Consulting
 Apr 2022 – Present  |  Gurugram
-Production ETL/ELT, Spark lakehouse, warehouse, and CDC for exam analytics, telecom, and automotive.
 
-Staff Service Commission (SSC) — Candidate 360 Data Platform (Current | dbt | Spark | Databricks | Superset)
-- Built production ELT data pipelines: source → dbt bronze/silver/gold (staging/intermediate/marts) as incremental Delta / Parquet tables on Azure Databricks (ADLS, Spark SQL / PySpark).
-- Ran production incremental loads (unique_key + lookback MERGE) so daily candidate/exam changes skip full refresh; kept SCD Type 2-style history for restatements.
-- Modeled Candidate 360 star schema (grain: 1 candidate) — registration, exam stages, status, attempts, results — for warehouse / BI consume.
-- Enforced data quality with dbt tests (unique, not_null, relationships) in GitLab CI/CD so bad data never reaches gold.
-- Shipped Apache Superset dashboards: 360 profile, stage funnel, pipeline freshness.
+Staff Service Commission (SSC) — Candidate 360 Data Platform (Current | dbt | Airflow | Databricks | Spark)
+- Built production ELT: source → dbt bronze/silver/gold as incremental Delta/Parquet on Azure Databricks (ADLS, Spark SQL / PySpark).
+- Orchestrated daily + catchup runs with Apache Airflow DAGs (retries, SLA, sensors, idempotent dbt tasks); GitLab CI/CD runs dbt tests before gold.
+- Incremental MERGE (unique_key + lookback) + SCD Type 2 history; Candidate 360 star schema (1 grain = 1 candidate, exam stages/status/attempts).
+- Apache Superset: 360 profile, stage funnel, DAG/freshness monitoring.
 
-Enterprise ICDB Data Platform — Phase 1 (Apache Spark | Databricks | SQL | CI/CD)
-- Built ICDB lakehouse tables on Azure Databricks with Apache Spark (PySpark / Spark SQL) and Delta; partitioned Parquet/Delta for prune-friendly reads.
-- Tuned production Spark/SQL jobs (joins, filters, file sizing, shuffle) using query plans to cut scans and runtime.
-- Automated data-object releases with GitLab CI/CD (dev → prod, rollback-safe).
-- Documented data lineage source → warehouse → consumers; validated grain and business rules each release.
+Enterprise ICDB Data Platform — Phase 1 (Spark | Databricks | ADF | CI/CD)
+- Built ICDB lakehouse tables with Apache Spark (PySpark / Spark SQL) + Delta on Databricks; partitioned for prune-friendly reads.
+- Tuned production Spark jobs (joins, file sizing, shuffle) via Spark UI / query plans.
+- Scheduled Spark/SQL loads on Azure Data Factory; promoted objects via GitLab CI/CD with rollback-safe releases; documented lineage.
 
-Enterprise ICDB Data Platform — Phase 2 (Production pipelines)
-- Operated production batch data pipelines between sources and downstream systems under SLA; monitoring, RCA, replay, runbooks.
+Enterprise ICDB Data Platform — Phase 2 (Kafka | Streaming | SLA)
+- Built production Apache Kafka pipelines (topics, keys/partitions, consumer groups) to move events between source and downstream systems under SLA.
+- Consumed with Spark Structured Streaming (checkpoint, trigger, late data); monitored consumer lag, replay from offset, RCA + runbooks.
 
-Production ETL & Warehouse Support (ETL | SQL | Data quality)
-- Owned production ETL (ODI) and warehouse loads within SLA; traced bad metrics to joins, filters, and source gaps; row-count / reconciliation checks.
+Production ETL & Warehouse Support (ADF | ODI | SQL | DQ)
+- Owned production ETL on Azure Data Factory + ODI: SLA tickets, load windows, row-count recon, backtrace bad metrics to joins/filters/source gaps.
 
 Multi-Region Master Data Migration — Wave rollout (ETL | Python | SQL)
-- Executed wave-based master-data ETL across regions; SQL/Python reconciliation on row counts, keys, attributes before cutover.
+- Wave-based master-data ETL across regions; SQL/Python reconciliation (counts, keys, attributes) before cutover.
 
-Production CDC & Rollback — Database upgrade (CDC | GoldenGate | Python)
-- Designed production CDC with Oracle GoldenGate (Extract/Replicat, INIT/sync) and Data Guard rollback/HA for a database upgrade; lag, trail, abend recovery.
-- Python extract-diff jobs plus Oracle → MariaDB transforms validated in GitLab CI/CD.
+Production CDC & Rollback — Database upgrade (GoldenGate | Kafka | CDC)
+- Production CDC: Oracle GoldenGate (Extract/Replicat, lag, trail, abend) + Data Guard rollback; published changes to Kafka for downstream lakehouse MERGE.
+- Python extract-diff + Oracle → MariaDB transforms validated in GitLab CI/CD.
 
 EDUCATION
 B.Tech, Electronics and Telecommunication Engineering — Chandigarh Engineering College, Chandigarh (2021, CGPA 7.8/10)
