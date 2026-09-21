@@ -1,51 +1,51 @@
 MANISH PANDEY
-Data Engineer  |  dbt  |  Azure Databricks  |  CDC  |  Data Warehousing
+Data Engineer  |  Python  |  SQL  |  PySpark  |  dbt  |  Azure Databricks  |  CDC
 Gurugram, India  |  +91-9140357957  |  mp4966@gmail.com  |  5 years
 
 SUMMARY
-Data Engineer with 5 years building production data platforms across public-sector exam analytics, telecom, and automotive. Currently own the Staff Service Commission (SSC) Candidate 360 warehouse — source-to-mart ELT in dbt (incremental models), served on Apache Superset. Previously delivered Oracle GoldenGate CDC, Azure Databricks (Spark SQL / PySpark), multi-region master-data migrations, and GitLab CI/CD. End-to-end ownership: dimensional modeling, incremental loads, data quality, production support.
+Data Engineer with 5 years of production experience building ELT/ETL platforms, warehouses, and CDC pipelines. Currently own the Staff Service Commission Candidate 360 platform: dbt incremental models on Azure Databricks (Spark SQL / PySpark, Delta), tested in CI, served on Apache Superset. Also shipped production CDC (GoldenGate), Spark/SQL performance work, multi-region migrations, and GitLab CI/CD for data releases. Own modeling, incremental loads, data quality, and on-call fixes end to end.
 
 SKILLS
-Languages: SQL (windows, incremental MERGE, query tuning), PL/SQL, Python (validation, reconciliation, automation)
-Data platform: dbt (staging / intermediate / marts, incremental, tests, docs), Azure Databricks (Spark SQL / PySpark), Apache Superset, OBIEE
-Warehousing: Dimensional modeling, Candidate 360, fact-dimension design, incremental ELT, data lineage, reconciliation
-CDC & integration: Oracle GoldenGate (Extract/Replicat, trail/lag, abend recovery), Data Guard, ODI, WebMethods, Siebel
-Engineering: GitLab CI/CD, Git, production incidents, runbooks, Oracle, MariaDB
+Languages: Python, SQL (windows, MERGE, incremental loads, query plans), PySpark / Spark SQL, PL/SQL
+Lakehouse: Azure Databricks, Delta Lake, dbt (staging / intermediate / marts, incremental, tests, docs), Apache Superset
+Pipelines: ETL / ELT, CDC, dimensional modeling, Candidate 360, data quality, reconciliation, lineage
+CDC & ETL: Oracle GoldenGate (Extract/Replicat, lag, trail, recovery), ODI, Data Guard, Oracle, MariaDB
+Engineering: GitLab CI/CD, Git, Azure, production monitoring, incident RCA, runbooks
 
 EXPERIENCE
 Data Engineer (Consultant) — Cubastion Consulting
 Apr 2022 – Present  |  Gurugram
-Enterprise data, integration, and analytics. Own pipelines from development through production support.
+Production data platforms for exam analytics, telecom, and automotive — ingest, transform, warehouse, CDC, and serve.
 
-Staff Service Commission (SSC) — Candidate 360 Data Platform (Current | dbt | Warehouse | Superset)
-- Built the SSC analytics warehouse: source systems → dbt staging → intermediate → marts for reporting-ready models.
-- Implemented incremental dbt models (unique keys + lookback / MERGE) so daily candidate and exam updates load without full refresh, with history for restatements.
-- Modeled Candidate 360 — one grain per candidate covering SSC registration, exam stages, status transitions, attempts, and results.
-- Dimensional design (candidate / exam / stage dims + activity facts) plus dbt tests (not_null, unique, relationships) so bad keys never reach dashboards.
-- Delivered Apache Superset dashboards: candidate 360 profile, stage-funnel drop-off, and freshness / ops views.
+Staff Service Commission (SSC) — Candidate 360 Data Platform (Current | dbt | Databricks | PySpark | Superset)
+- Built production ELT: sources → dbt staging / intermediate / marts, materialized as incremental Delta tables on Azure Databricks (Spark SQL / PySpark).
+- Ran incremental models (unique_key + lookback MERGE) in production so daily candidate/exam changes load without full refresh; retained history for restatements.
+- Designed Candidate 360 (grain: 1 row per candidate) with registration, exam stages, status transitions, attempts, and results — fact + dimension model.
+- Gated releases with dbt tests (unique, not_null, relationships) in GitLab CI/CD so bad keys/stages never reach gold or dashboards.
+- Shipped production Apache Superset views: candidate 360, stage-funnel drop-off, and freshness monitoring for ops.
 
-Enterprise ICDB Data Platform — Phase 1 (Databricks | SQL | GitLab CI/CD | Lineage)
-- Built GitLab CI/CD to deploy database objects across environments with controlled, rollback-safe releases.
-- Tuned advanced SQL / PL/SQL for BI and downstream apps; used plans/rewrites to cut expensive scans and bad joins.
-- Delivered analytics-ready tables on Azure Databricks (Spark SQL / PySpark) aligned to warehouse grain and business rules.
-- Reverse-engineered OBIEE SQL for lineage and bottlenecks; mapped sources to ICDB tables and validated business rules through release cycles.
+Enterprise ICDB Data Platform — Phase 1 (PySpark | Databricks | SQL | CI/CD)
+- Built analytics-ready ICDB tables on Azure Databricks with PySpark / Spark SQL and Delta; partitioned for prune-friendly reads by downstream jobs.
+- Tuned production SQL/Spark jobs (joins, filters, file layout) using query plans to cut heavy scans and shuffle-heavy patterns.
+- Automated environment promotions of data objects via GitLab CI/CD with rollback-safe releases.
+- Documented lineage from warehouse tables to consumers; mapped sources → ICDB and validated grain and business rules in each release.
 
-Enterprise ICDB Data Platform — Phase 2 (Integration & AMS)
-- Built and supported WebMethods services moving data between internal systems and downstream platforms under AMS SLAs.
-- Monitored live services, analysed logs, ran incident RCA, and wrote runbooks for data flows and operational fixes.
+Enterprise ICDB Data Platform — Phase 2 (Production pipelines)
+- Operated production data-integration pipelines moving batches between source systems and downstream platforms under SLA.
+- Owned monitoring, log analysis, incident RCA, and runbooks so pipeline failures were detected, replayed, and documented.
 
-BI & DMS Managed Services Platform (OBIEE | ODI | SLA)
-- Owned BI managed services (OBIEE + ODI): incidents and change requests within SLA; backtraced report issues to joins, filters, and data gaps.
-- Fixed ODI mappings, agent config, and load validations; mentored juniors on troubleshooting, reconciliation, and CI/CD hygiene.
+Production ETL & Warehouse Support (ODI | SQL | Data quality)
+- Owned production ETL (ODI) and warehouse loads: incidents and change requests within SLA; traced bad numbers to joins, filters, and source gaps.
+- Fixed mappings, load windows, and row-count checks; mentored juniors on reconciliation, SQL backtracing, and CI/CD for data changes.
 
-Multi-Region Master Data Migration — Wave / Phase-Based Rollout (ODI | Reconciliation | Python)
-- Executed wave-based master data migrations across regions with completeness and key-integrity checks.
-- Built ODI packages (legacy → target) and pre/post reconciliation in SQL + Python (row counts, keys, attributes); closed mapping/DQ gaps via SQL backtracing.
+Multi-Region Master Data Migration — Wave rollout (ETL | Python | Reconciliation)
+- Executed wave-based master-data migrations across regions with key integrity and completeness gates before cutover.
+- Built ETL packages plus SQL/Python reconciliation (row counts, keys, attributes); closed mapping and data-quality gaps before go-live.
 
-Database Upgrade — CDC & Rollback Implementation (GoldenGate | Data Guard | Python)
-- Designed CDC + rollback for a Siebel upgrade using Oracle GoldenGate (hub/client, Extract/Replicat, INIT/sync) and Active–Active Data Guard for HA/fallback.
-- Owned lag analysis, LogDump trail troubleshooting, and abend recovery during cutover.
-- Wrote Python CSV-diff utilities for mismatches; delivered Oracle → MariaDB SQL/PLSQL transforms with GitLab CI/CD validation.
+Production CDC & Rollback — Database upgrade (GoldenGate | CDC | Python)
+- Designed production CDC and rollback using Oracle GoldenGate (Extract/Replicat, INIT/sync, hub/client) plus Data Guard for HA/fallback during a major database upgrade.
+- Owned replication lag, trail-file troubleshooting, and abend recovery so capture stayed within cutover limits.
+- Wrote Python diff jobs for large extracts; delivered Oracle → MariaDB transforms with automated validation in GitLab CI/CD.
 
 EDUCATION
 B.Tech, Electronics and Telecommunication Engineering — Chandigarh Engineering College, Chandigarh (2021, CGPA 7.8/10)
