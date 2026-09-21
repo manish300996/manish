@@ -130,3 +130,10 @@ li { margin: 0.28mm 0; }
 }
 .ed::after { content: ""; display: block; clear: both; }
 .tiny { color: var(--muted); font-size: 7.7pt; margin: 0.2mm 0 0.4mm; }
+
+.keywords {
+  font-size: 7.7pt;
+  color: var(--ink);
+  line-height: 1.32;
+  margin: 0.8mm 0 0.4mm;
+}
