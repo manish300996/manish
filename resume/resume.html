@@ -40,7 +40,7 @@
 <p class="tiny">Production data platforms for exam analytics, telecom, and automotive — ingest, transform, warehouse, CDC, and serve.</p>
 
 <div class="block">
-<div class="proj">Staff Service Commission (SSC) — Candidate 360 Data Platform  <span>Current  ·  dbt  ·  Databricks  ·  PySpark  ·  Superset</span></div>
+<div class="proj"><strong>Staff Service Commission (SSC) — Candidate 360 Data Platform</strong>  <span>Current  ·  dbt  ·  Databricks  ·  PySpark  ·  Superset</span></div>
 <ul>
   <li>Built production ELT: sources → <strong>dbt</strong> staging / intermediate / marts, materialized as incremental <strong>Delta</strong> tables on <strong>Azure Databricks</strong> (Spark SQL / PySpark).</li>
   <li>Ran <strong>incremental models</strong> (unique_key + lookback MERGE) in production so daily candidate/exam changes load without full refresh; retained history for restatements.</li>
@@ -51,7 +51,7 @@
 </div>
 
 <div class="block">
-<div class="proj">Enterprise ICDB Data Platform — Phase 1  <span>PySpark  ·  Databricks  ·  SQL  ·  CI/CD</span></div>
+<div class="proj"><strong>Enterprise ICDB Data Platform — Phase 1</strong>  <span>PySpark  ·  Databricks  ·  SQL  ·  CI/CD</span></div>
 <ul>
   <li>Built analytics-ready ICDB tables on <strong>Azure Databricks</strong> with <strong>PySpark / Spark SQL</strong> and Delta; partitioned for prune-friendly reads by downstream jobs.</li>
   <li>Tuned production SQL/Spark jobs (joins, filters, file layout) using query plans to cut heavy scans and shuffle-heavy patterns.</li>
@@ -61,7 +61,7 @@
 </div>
 
 <div class="block">
-<div class="proj">Enterprise ICDB Data Platform — Phase 2 (Production pipelines)  <span>Integrations  ·  SLA  ·  Monitoring</span></div>
+<div class="proj"><strong>Enterprise ICDB Data Platform — Phase 2 (Production pipelines)</strong>  <span>Integrations  ·  SLA  ·  Monitoring</span></div>
 <ul>
   <li>Operated production data-integration pipelines moving batches between source systems and downstream platforms under SLA.</li>
   <li>Owned monitoring, log analysis, incident RCA, and runbooks so pipeline failures were detected, replayed, and documented.</li>
@@ -69,7 +69,7 @@
 </div>
 
 <div class="block">
-<div class="proj">Production ETL &amp; Warehouse Support  <span>ODI  ·  SQL  ·  Data quality</span></div>
+<div class="proj"><strong>Production ETL &amp; Warehouse Support</strong>  <span>ODI  ·  SQL  ·  Data quality</span></div>
 <ul>
   <li>Owned production ETL (ODI) and warehouse loads: incidents and change requests within SLA; traced bad numbers to joins, filters, and source gaps.</li>
   <li>Fixed mappings, load windows, and row-count checks; mentored juniors on reconciliation, SQL backtracing, and CI/CD for data changes.</li>
@@ -77,7 +77,7 @@
 </div>
 
 <div class="block">
-<div class="proj">Multi-Region Master Data Migration (Wave rollout)  <span>ETL  ·  Python  ·  Reconciliation</span></div>
+<div class="proj"><strong>Multi-Region Master Data Migration (Wave rollout)</strong>  <span>ETL  ·  Python  ·  Reconciliation</span></div>
 <ul>
   <li>Executed wave-based <strong>master-data migrations</strong> across regions with key integrity and completeness gates before cutover.</li>
   <li>Built ETL packages plus SQL/Python reconciliation (row counts, keys, attributes); closed mapping and data-quality gaps before go-live.</li>
@@ -85,7 +85,7 @@
 </div>
 
 <div class="block">
-<div class="proj">Production CDC &amp; Rollback (Database upgrade)  <span>GoldenGate  ·  CDC  ·  Python</span></div>
+<div class="proj"><strong>Production CDC &amp; Rollback (Database upgrade)</strong>  <span>GoldenGate  ·  CDC  ·  Python</span></div>
 <ul>
   <li>Designed production <strong>CDC</strong> and rollback using <strong>Oracle GoldenGate</strong> (Extract/Replicat, INIT/sync, hub/client) plus Data Guard for HA/fallback during a major database upgrade.</li>
   <li>Owned replication lag, trail-file troubleshooting, and abend recovery so capture stayed within cutover limits.</li>

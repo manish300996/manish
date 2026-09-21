@@ -96,14 +96,18 @@ h2 {
 .job-head::after { content: ""; display: block; clear: both; }
 
 .proj {
-  font-weight: 750;
   color: var(--navy);
-  font-size: 8.8pt;
+  font-size: 9.15pt;
   margin: 1.7mm 0 0.35mm;
 }
 
+.proj strong {
+  font-weight: 700;
+  color: var(--navy);
+}
+
 .proj span {
-  font-weight: 600;
+  font-weight: 500;
   color: var(--teal);
   font-size: 7.5pt;
 }
