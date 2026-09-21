@@ -45,7 +45,7 @@
 <div class="proj"><strong>Staff Service Commission (SSC) — Candidate 360 Data Platform</strong>  <span>Current  ·  dbt  ·  Airflow  ·  Databricks  ·  Spark</span></div>
 <ul>
   <li>Built production ELT: source → dbt bronze/silver/gold as incremental <strong>Delta/Parquet</strong> on <strong>Azure Databricks</strong> (ADLS, Spark SQL / PySpark).</li>
-  <li>Orchestrated daily + catchup runs with <strong>Apache Airflow</strong> DAGs (retries, SLA, sensors, idempotent dbt tasks); GitLab CI/CD runs dbt tests before gold.</li>
+  <li>Orchestrated daily + backfill runs with <strong>Apache Airflow</strong> DAGs (retries, SLA, sensors, idempotent dbt tasks); GitLab CI/CD runs dbt tests before gold.</li>
   <li>Incremental MERGE (unique_key + lookback) + <strong>SCD Type 2</strong> history; <strong>Candidate 360</strong> star schema (1 grain = 1 candidate, exam stages/status/attempts).</li>
   <li>Apache Superset: 360 profile, stage funnel, DAG/freshness monitoring.</li>
 </ul>

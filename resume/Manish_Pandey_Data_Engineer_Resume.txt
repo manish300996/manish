@@ -20,7 +20,7 @@ Apr 2022 – Present  |  Gurugram
 
 Staff Service Commission (SSC) — Candidate 360 Data Platform (Current | dbt | Airflow | Databricks | Spark)
 - Built production ELT: source → dbt bronze/silver/gold as incremental Delta/Parquet on Azure Databricks (ADLS, Spark SQL / PySpark).
-- Orchestrated daily + catchup runs with Apache Airflow DAGs (retries, SLA, sensors, idempotent dbt tasks); GitLab CI/CD runs dbt tests before gold.
+- Orchestrated daily + backfill runs with Apache Airflow DAGs (retries, SLA, sensors, idempotent dbt tasks); GitLab CI/CD runs dbt tests before gold.
 - Incremental MERGE (unique_key + lookback) + SCD Type 2 history; Candidate 360 star schema (1 grain = 1 candidate, exam stages/status/attempts).
 - Apache Superset: 360 profile, stage funnel, DAG/freshness monitoring.
 
