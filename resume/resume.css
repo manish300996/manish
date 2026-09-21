@@ -1,0 +1,139 @@
+/* ATS-friendly one-page Data Engineer resume */
+
+@page {
+  size: A4;
+  margin: 10.5mm 11.5mm 10.5mm 11.5mm;
+}
+
+:root {
+  --navy: #0e2744;
+  --ink: #1b2430;
+  --muted: #4e5968;
+  --line: #d5dce6;
+  --teal: #0f6e6b;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, "Noto Sans", "Liberation Sans", sans-serif;
+  color: var(--ink);
+  font-size: 8.85pt;
+  line-height: 1.28;
+}
+
+h1.name {
+  margin: 0;
+  font-size: 18.5pt;
+  letter-spacing: -0.03em;
+  color: var(--navy);
+  font-weight: 750;
+  line-height: 1.05;
+}
+
+.title-line {
+  margin: 1mm 0 1.4mm;
+  font-size: 9.3pt;
+  font-weight: 650;
+  color: var(--teal);
+}
+
+.contact {
+  font-size: 8pt;
+  color: var(--muted);
+}
+
+.header {
+  border-bottom: 2.2px solid var(--navy);
+  padding-bottom: 2.6mm;
+  margin-bottom: 2.8mm;
+}
+
+h2 {
+  font-size: 8pt;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--navy);
+  border-bottom: 1px solid var(--line);
+  margin: 2.6mm 0 1.6mm;
+  padding-bottom: 0.7mm;
+  font-weight: 750;
+}
+
+.summary { margin: 0; color: #243040; }
+
+.skills {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 8.2pt;
+}
+
+.skills td { vertical-align: top; padding: 0.35mm 0 0.45mm; }
+.skills .k {
+  width: 28mm;
+  font-weight: 700;
+  color: var(--navy);
+  padding-right: 2.5mm;
+  white-space: nowrap;
+}
+
+.job-head .role {
+  font-weight: 750;
+  font-size: 9.6pt;
+  color: var(--navy);
+}
+
+.job-head .meta {
+  float: right;
+  font-size: 8pt;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.job-head .co { font-weight: 600; font-size: 8.8pt; }
+.job-head::after { content: ""; display: block; clear: both; }
+
+.proj {
+  color: var(--navy);
+  font-size: 9.15pt;
+  margin: 1.7mm 0 0.35mm;
+}
+
+.proj strong {
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.proj span {
+  font-weight: 500;
+  color: var(--teal);
+  font-size: 7.5pt;
+}
+
+ul {
+  margin: 0.2mm 0 0.3mm 3.6mm;
+  padding: 0;
+}
+
+li { margin: 0.28mm 0; }
+
+.block { page-break-inside: avoid; }
+
+.ed .l { font-weight: 700; color: var(--navy); }
+.ed .r {
+  float: right;
+  color: var(--muted);
+  font-size: 8pt;
+  font-weight: 600;
+}
+.ed::after { content: ""; display: block; clear: both; }
+.tiny { color: var(--muted); font-size: 7.7pt; margin: 0.2mm 0 0.4mm; }
+
+.keywords {
+  font-size: 7.7pt;
+  color: var(--ink);
+  line-height: 1.32;
+  margin: 0.8mm 0 0.4mm;
+}
